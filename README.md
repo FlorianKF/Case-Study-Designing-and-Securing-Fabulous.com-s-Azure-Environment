@@ -25,3 +25,10 @@ This case study aims to demonstrate how Azure security services work together by
 # Proposed Solution
 
 ## 1. Identity Management
+
+To meet its identity and access management requirements, ***Fabulous.com*** requires a centralized identity platform capable of supporting employees, external partners, customers, and legacy applications. To address these business requirements, the following Azure services have been selected
+
+|Bussiness requierement| Azure Service|Purpose|
+|-----|----|-----|
+|Employee Identity Management| Microsoft Entra ID| It´s the primary identity provider for employees, enables centralized Authentication, Single Sign-On (SSO), and secure access to Azure resources|
+|Legacy Application Support|Microsoft Entra Domain Services|
