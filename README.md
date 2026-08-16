@@ -19,3 +19,9 @@ This case study aims to demonstrate how Azure security services work together by
 - Illustrating how Single Sign-On (SSO), Multi-Factor Authentication (MFA), Conditional Access, and Azure Role-Based Access Control (RBAC) support a Zero Trust security model;
 - Explaining the roles of Microsoft Entra ID, Microsoft Entra Domain Services, and Microsoft Entra External ID through practical business scenarios;
 - Simulating a security incident to show how encryption, Azure Key Vault, Defense in Depth, and Microsoft Defender for Cloud help protect Azure resources, reduce security risks, and improve the organization's security posture.
+
+
+
+# Proposed Solution
+
+## 1. Identity Management
