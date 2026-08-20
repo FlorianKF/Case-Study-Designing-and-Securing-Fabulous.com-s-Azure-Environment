@@ -76,7 +76,40 @@ We will explain how:
   
 Help protect Azure resources, mitigate security risks, and improve the security posture of the ***Fabulous.com***
 
+### A- Encryption
 
+If encryption enabled, sensitive customer data stored in Azure Storage will be encrypted at rest and in transit. Even in the event of unauthorized access, the information remains unreadable without the appropriate encryption keys.
 
+### B- Azure Key Vault
+
+Encryption keys, certificates, and application secrets of ***Fabulous.com*** most be securely stored in Azure Key Vault instead of being embedded in the application code. This significantly reduces the risk of credential exposure. Even if the attacker compromises a user account, access to Azure Key Vault remains restricted unless the compromised identity has been explicitly granted the required permissions.
+
+### C- Defense in Depth
+
+With this, multiple security layers will protect Fabulous.com's Azure environment:
+
+- Microsoft Entra ID
+- Multi-Factor Authentication
+- Conditional Access
+- Azure Firewall
+- Network Security Groups
+- Encryption
+- Azure RBAC
+
+So, if one security layer is compromised, additional layers continue protecting the environment.
+
+### D- Microsoft Defender for Cloud
+
+Microsoft Defender for Cloud will continuously monitor Azure resources and identify:
+
+- Security misconfigurations
+- Vulnerabilities
+- Suspicious activities
+- Potential cyber threats
+
+It will generate security alerts, provide remediation recommendations, and improve the Fabulous.com's Secure Score.
+
+## In sum;
+This solution will provide ***Fabulous.com*** with a secure, scalable, and resilient Azure environment that protect identities, applications, and data while supporting business growth and maintaining business continuity.
 
 
