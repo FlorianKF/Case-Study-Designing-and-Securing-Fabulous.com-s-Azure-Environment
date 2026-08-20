@@ -31,4 +31,52 @@ To meet its identity and access management requirements, ***Fabulous.com*** requ
 |Bussiness requierement| Azure Service|Purpose|
 |-----|----|-----|
 |Employee Identity Management| Microsoft Entra ID| It´s the primary identity provider for employees, enables centralized Authentication, Single Sign-On (SSO), and secure access to Azure resources|
-|Legacy Application Support|Microsoft Entra Domain Services|
+|Legacy Application Support|Microsoft Entra Domain Services|This provides managed domain services such as domain join, LDAP, Kerberos, and Group Policy for legacy applications without requiring the deployment of domain controllers|
+|External collaboration|Microsoft Entra External ID|Enables secure collaboration with external users as: suppliers, logistics partners, customers... by allowing them to access only the resources they need while using their existing identities|
+
+## 2. Authentication and Access Management
+
+To implement a Zero Trust architecture, ***Fabulous.com*** should combine several Microsoft Entra security features as Single Sign-On (SSO), Multi-Factor Authentication (MFA), Conditional Access, and Azure Role-Based Access Control (RBAC) depending of used cases.
+
+|Azure ID services|Purposes|Bussiness Benefits|
+|---|----|----|
+|Single Sign-On (SSO)|Will allow employees to authenticate once through Microsoft Entra ID and securely access multiple business applications|Improves productivity and reduces password fatigue and forgetfulness|
+|Multi-Factor Authentication (MFA)|This will require a second authentication factor, such as Microsoft Authenticator in addition in case of using a password|Reduces the risk of unauthorized access and reinforces access security|
+| Onditional Acces|Evaluates every sign-in request based on user identity, device compliance, geographic location, and sign-in risk before granting access|It will enhance security by allowing Azure to authorize access, require multi-factor authentication, or block unauthorized login attempts based on security conditions|
+|Azure Role-Based Access Control (RBAC)|This will determine the actions that each authenticated user is authorized to perform|Implements the principle of least privilege, ensuring users receive only the permissions required for their responsibilities|
+
+
+#### Accordingly, users at ***Fabulous.com*** will be assigned different Azure roles based on their responsibilities, ensuring that each user receives only the permissions required to perform their job functions.
+For example:
+
+|Users| Azure Role|Permissions|
+|---|---|---|
+|Customer|Reader|View Azure resources only|
+|Developer| Contributor|Could create, modify, and delete Azure resources, but could not manage access|will get full control over resources, including access management|
+|Administrator| Owner|Will get the full control over Azure resources, including access management|
+
+
+## 3. Security Incident Simulation
+
+A cybercriminal has launched a credential compromise campaign against ***Fabulous.com*** using several attack techniques including: 
+
+- Phishing:
+- Password spraying,
+- Dictionary attacks,
+- And credential stuffing.
+
+Their goal is to gain unauthorized access to confidential customer information and other sensitive Azure resources.
+The attacker aims to escalate privileges, exfiltrate sensitive business data, and disrupt normal business operations.
+We will explain how:
+
+- Encryption, 
+- Azure Key Vault, 
+- Defense in depth, 
+- And Microsoft Defender for Cloud
+  
+Help protect Azure resources, mitigate security risks, and improve the security posture of the ***Fabulous.com***
+
+
+
+
+
